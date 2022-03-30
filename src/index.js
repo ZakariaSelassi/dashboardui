@@ -4,9 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/* Added importe */
+import {BrowserRouter} from 'react-router-dom';
+import MyRouter from './Router';
+import {
+  ThemeProvider,
+  createTheme
+} from '@material-ui/core/styles';
+
+const theme = createTheme()
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <MyRouter />
+      </BrowserRouter>
+    </ThemeProvider>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );
