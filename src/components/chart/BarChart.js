@@ -5,6 +5,8 @@ import { Box ,Button, Paper} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import  ChevronRightIcon  from '@mui/icons-material/ChevronRight';
 import Divider from '@material-ui/core/Divider';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+
 const useStyles = makeStyles((theme) => ({
 
   titleChart:{
@@ -39,18 +41,19 @@ const BarChart = () => {
                   responsive:true,
                   
                 }}
-                height={400}
+                height={450}
                   />
           
           </Box>
             
           <Divider/>
-          <Box display="flex" justifyContent="flex-end" padding="1rem">
-          <Button>
-              OverView
-          <ChevronRightIcon/>
-          </Button>
-          </Box>
+          <Box display="flex" justifyContent="flex-end"  alignItems="center" padding="1rem">
+        <Button  style={{fontSize:'0.7rem'}}>
+        Overview 
+        <ArrowRightIcon style={{width:'20px',margin:'auto'}}/>
+        </Button>
+      
+         </Box>
     </>
        
 

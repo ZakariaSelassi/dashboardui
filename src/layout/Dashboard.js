@@ -7,6 +7,7 @@ import { Grid } from '@material-ui/core';
 import DoughnutChart from '../components/chart/DoughnutChart';
 import BarChart from '../components/chart/BarChart';
 import Products from '../components/products/Products';
+import Order from '../components/order/Order';
 const Dashboard = () => {
   return (
     <Grid container spacing={2}>   
@@ -31,9 +32,17 @@ const Dashboard = () => {
         </Paper>
       </Grid>
       
-      <Grid item xs={12} sm={12} md={12} lg={9} xl={9}>
+       <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
+      <Paper  style={{height:'100%'}}>
         <Products/>
+      </Paper>
       </Grid>
+     <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
+      <Paper  style={{height:'100%'}}>
+        <Order/>
+      </Paper>
+      </Grid>
+
 
 
     </Grid>

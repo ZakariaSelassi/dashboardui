@@ -43,14 +43,6 @@ const PaperCommon = ({title,budget,rating,icon,background,status,chart}) => {
                 {icon}
                 </Box>
         </Box> }
-        
-{/*            
-            {status &&   <Box sx={{height:'600px'}}>
-
-                <Divider/>
-                {chart}
-                <Divider/>)
-            </Box>} */}
     </Paper>
   )
 }
