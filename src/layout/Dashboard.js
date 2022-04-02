@@ -1,5 +1,5 @@
 import React from 'react'
-import PaperCommon from '../components/Paper/PaperCommon';
+import PaperCommon from '../components/dashboardL/Paper/PaperCommon';
 import { Box, Paper } from '@material-ui/core'
 import { PaperData } from "../utils/FakeData/dataPaper";
 import { Grid } from '@material-ui/core';
@@ -15,7 +15,7 @@ const Dashboard = () => {
         PaperData.map((paper,index)=>{
           return(
             <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
-              <PaperCommon {...paper} key={index} status={false}/>
+              <PaperCommon  {...paper} key={index} status={false}/>
             </Grid>
           )
         })
