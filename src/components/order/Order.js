@@ -7,22 +7,20 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { TableSortLabel } from '@material-ui/core';
 import Paper from '@mui/material/Paper';
-import {order} from '../../utils/dataOrder';
+import {order} from '../../utils/FakeData/dataOrder';
 import { Divider } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-
+import {useCommonStyle} from '../../utils/Style/commonStyle'
+import ButtonMUI from '../../components/common/ButtonMUI';
 const Order = () => {
     const [orderData, setOrderData] = useState(Object.keys(order[0]));
-  return (
+    const classes = useCommonStyle()
+    return (
       <>
         <TableContainer>
-        <h1 style={{    fontWeight:'600',
-    fontSize:'1.125rem',
-    lineHeight:'1.375',
-    margin:0,
-    padding:'1rem'}}>Latest Products</h1>
+        <h1 className={classes.titleDashboard}>Latest Products</h1>
                 <Divider/>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
@@ -63,12 +61,10 @@ const Order = () => {
             </TableBody>
         </Table>
         <Divider/>
-        <Box display="flex" justifyContent="flex-end"  alignItems="center" padding="1rem">
-        <Button  style={{fontSize:'0.7rem'}}>
-            View all 
-        </Button>
-        <ArrowRightIcon style={{width:'20px'}}/>
-         </Box>
+        <ButtonMUI>
+            View All
+            <ArrowRightIcon style={{width:'20px',margin:'auto'}}/>
+        </ButtonMUI>
         </TableContainer>
 
     </>

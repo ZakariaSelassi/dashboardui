@@ -1,9 +1,9 @@
-import Dropbox from '../icon/dropbox.svg'
-import Github from '../icon/github.svg'
-import Slack from '../icon/slack.svg'
-import Dots from '../icon/dots.svg'
-import Google from '../icon/google.svg'
-import ReactIcon from '../icon/react.svg'
+import Dropbox from '../../icon/dropbox.svg'
+import Github from '../../icon/github.svg'
+import Slack from '../../icon/slack.svg'
+import Dots from '../../icon/dots.svg'
+import Google from '../../icon/google.svg'
+import ReactIcon from '../../icon/react.svg'
 export const products = [
     {
         id:'1',

@@ -16,7 +16,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
-import {dataNavbar} from '../../utils/dataNavbar'
+import {dataNavbar} from '../../utils/FakeData/dataNavbar'
 import {useNavigate} from 'react-router-dom'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import SearchIcon from '@mui/icons-material/Search';

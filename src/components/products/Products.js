@@ -1,29 +1,30 @@
 import { Box, Divider, Paper } from '@material-ui/core'
 import React from 'react'
-import {products} from '../../utils/dataProducts'
-import Button from '@material-ui/core/Button'
+import {products} from '../../utils/FakeData/dataProducts'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import Proptypes from 'prop-types'
+import ButtonMUI from '../common/ButtonMUI';
+import {useCommonStyle} from '../../utils/Style/commonStyle'
 const Products = ({title}) => {
+    const classes = useCommonStyle()
   return (
     <>
             <Paper>
-                <h1 style={{    fontWeight:'600',fontSize:'1.125rem',lineHeight:'1.375',margin:0,padding:'1rem'}}>{title}</h1>
+                <h1 className={classes.titleDashboard}>{title}</h1>
                 <Divider/>
                 {
                     products.map((product, index) => {
                         return (
                           <>
-                          
-                          <Box style={{display:'flex',padding:'1rem'}} key={product.id}>
+                
+                          <Box className={classes.containerProducts} key={product.id}>
                             <Box>
                                <img src={product.icon} alt="React Logo" width={36.5} />
                             </Box>
-                            <Box style={{width:'100%',paddingLeft:'1rem',display:'flex', flexDirection:'column',justifyContent:'space-around'}}>
-                              <span>{product.name}</span>
-                              <span style={{fontSize:'0.72rem'}}>{product.description} </span>
-                            </Box>
-                            <Box style={{display:'flex' , justifyContent:'flex-end', alignContent:'center',width:'100%'}}>
+                              <Box className={classes.descriptionsProducts}>
+                                <span>{product.name}</span>
+                                <span style={{fontSize:'0.72rem'}}>{product.description} </span>
+                              </Box>
+                            <Box className={classes.dotsProducts}>
                                <img src={product.more} alt="React Logo" width={20} />
                             </Box>
                           </Box>
@@ -34,14 +35,10 @@ const Products = ({title}) => {
                     
                 }
                 <Divider/>
-                <Box display="flex" justifyContent="flex-end"  alignItems="center" padding="1rem">
-        <Button  style={{fontSize:'0.7rem'}}>
-        View all 
-        <ArrowRightIcon style={{width:'20px',margin:'auto'}}/>
-        </Button>
-      
-         </Box>
-               
+                <ButtonMUI>
+                    View All
+                  <ArrowRightIcon style={{width:'20px',margin:'auto'}}/>
+                </ButtonMUI>
             </Paper>
        
     </>

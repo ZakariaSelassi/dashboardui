@@ -1,7 +1,7 @@
 import React from 'react'
 import PaperCommon from '../components/Paper/PaperCommon';
 import { Box, Paper } from '@material-ui/core'
-import { PaperData } from '../utils/dataPaper';
+import { PaperData } from "../utils/FakeData/dataPaper";
 import { Grid } from '@material-ui/core';
 /* chart js */
 import DoughnutChart from '../components/chart/DoughnutChart';
