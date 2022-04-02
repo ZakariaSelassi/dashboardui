@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
-import Navbar from './components/navbar/Navbar'
+import Navbar from "./components/dashboardL/navbar/Navbar"
 import { Box,Toolbar } from '@material-ui/core'
 const drawerWidth = 240;
 const App = () => {

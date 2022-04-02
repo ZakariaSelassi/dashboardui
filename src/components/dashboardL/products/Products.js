@@ -1,9 +1,9 @@
 import { Box, Divider, Paper } from '@material-ui/core'
 import React from 'react'
-import {products} from '../../utils/FakeData/dataProducts'
+import {products} from "../../../utils/FakeData/dataProducts"
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ButtonMUI from '../common/ButtonMUI';
-import {useCommonStyle} from '../../utils/Style/commonStyle'
+import {useCommonStyle} from "../../../utils/Style/commonStyle";
 const Products = ({title}) => {
     const classes = useCommonStyle()
   return (

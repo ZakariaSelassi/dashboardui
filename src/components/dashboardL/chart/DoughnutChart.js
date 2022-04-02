@@ -1,12 +1,12 @@
 import { Divider, Paper } from '@material-ui/core'
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2'
-import { dataDoughnut } from '../../utils/FakeData/dataDougnut'
+import { dataDoughnut } from '../../../utils/FakeData/dataDougnut'
 import {Box} from '@material-ui/core'
 import ComputerIcon from "@mui/icons-material/Computer"
 import TabletIcon from "@mui/icons-material/Tablet"
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import { useCommonStyle } from '../../utils/Style/commonStyle'
+import { useCommonStyle } from "../../../utils/Style/commonStyle";
 
 const DoughnutChart = () => {
   const classes = useCommonStyle()

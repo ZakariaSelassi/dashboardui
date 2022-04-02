@@ -7,13 +7,13 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { TableSortLabel } from '@material-ui/core';
 import Paper from '@mui/material/Paper';
-import {order} from '../../utils/FakeData/dataOrder';
+import {order} from '../../../utils/FakeData/dataOrder';
 import { Divider } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import {useCommonStyle} from '../../utils/Style/commonStyle'
-import ButtonMUI from '../../components/common/ButtonMUI';
+import {useCommonStyle} from "../../../utils/Style/commonStyle";
+import ButtonMUI from '../common/ButtonMUI';
 const Order = () => {
     const [orderData, setOrderData] = useState(Object.keys(order[0]));
     const classes = useCommonStyle()

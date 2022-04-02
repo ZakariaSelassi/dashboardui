@@ -4,10 +4,10 @@ import { Box, Paper } from '@material-ui/core'
 import { PaperData } from "../utils/FakeData/dataPaper";
 import { Grid } from '@material-ui/core';
 /* chart js */
-import DoughnutChart from '../components/chart/DoughnutChart';
-import BarChart from '../components/chart/BarChart';
-import Products from '../components/products/Products';
-import Order from '../components/order/Order';
+import DoughnutChart from '../components/dashboardL/chart/DoughnutChart';
+import BarChart from '../components/dashboardL/chart/BarChart';
+import Products from '../components/dashboardL/products/Products';
+import Order from '../components/dashboardL/order/Order';
 const Dashboard = () => {
   return (
     <Grid container spacing={2}>   
