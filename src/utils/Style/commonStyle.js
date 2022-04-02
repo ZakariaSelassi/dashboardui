@@ -60,7 +60,14 @@ export const useCommonStyle = makeStyles(theme => ({
     },
     descriptionsDougnutChart:{
         textAlign:'center',padding: '8px'
-    }
+    },
     /* DougnutChart end */
+
+    /* Customers elements */
+    customerRow:{
+        '&:hover':{
+            backgroundColor:'#df487f !important'
+        }
+    }
 
 }));

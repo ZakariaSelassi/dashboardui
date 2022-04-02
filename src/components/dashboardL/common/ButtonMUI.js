@@ -6,7 +6,7 @@ const ButtonMUI = ({children,...props}) => {
     <Box display="flex" justifyContent="flex-end"  alignItems="center" padding="1rem">
         <Button 
             {...props}
-             style={{fontSize:'0.7rem'}}>
+            /*  style={{fontSize:'0.7rem'}} */>
             {children}
         </Button>
 
