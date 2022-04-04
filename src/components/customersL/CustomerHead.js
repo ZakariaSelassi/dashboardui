@@ -3,26 +3,27 @@ import {Box,Typography} from '@material-ui/core'
 import ButtonMUI from '../dashboardL/common/ButtonMUI';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import FileUploadIcon from '@mui/icons-material/FileUpload';
+import { Button } from '@material-ui/core';
+import SearchIcon from '@mui/icons-material/Search';
+
+import { Input } from '@mui/icons-material';
+
 
 const CustomerHead = () => {
   return (
-    <Box variant="Box" style={{width:'100%',margin:'0',paddingTop:'64px',paddingBottom:'64px'}}> 
-    <Box display="flex" justifyContent="space-between">
-        <Typography variant="h4" style={{paddingLeft:'1rem'}}>
-            Customers
-        </Typography>
-        <Box display="flex"  style={{margin:'0'}}>
-        <ButtonMUI >
-            <FileDownloadIcon style={{fontSize:'20px'}}/>
-            Import</ButtonMUI>
-        <ButtonMUI >
-            <FileUploadIcon style={{fontSize:'20px'}}/>
-            Export</ButtonMUI>
-        <ButtonMUI color="secondary" variant="contained">Add Customers</ButtonMUI>
-        </Box>
-     
-    </Box>  
-</Box>
+    <Box style={{display:'flex', alignItems:'center',justifyContent:'space-between',flexWrap:'wrap' }}>
+            <h4>Customers</h4>
+            <Box  style={{display:'flex',flexWrap:'wrap'    }}>
+                <Button>
+                    <FileDownloadIcon style={{fontSize:'15px'}}/>
+                    Import</Button>
+                <Button  style={{ }}>
+                    <FileUploadIcon style={{fontSize:'15px'}}/>
+                    Export
+                </Button>
+                <Button color="secondary" variant="contained" /* style={{width:'50%'}} */ >Add Customers</Button>
+            </Box>
+    </Box>
   )
 }
 
