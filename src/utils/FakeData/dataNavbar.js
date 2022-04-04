@@ -23,13 +23,13 @@ export const dataNavbar = [
         id: 3,
         title: 'Products',
         icon: <ShoppingBagIcon/>,
-        path: '/products',
+        path: '/product',
     },
     {
         id: 4,
         title: 'Accounts',
         icon:  <PersonIcon />,
-        path: '/accounts',
+        path: '/account',
     },
     {
         id: 5,
