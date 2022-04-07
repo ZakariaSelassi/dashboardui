@@ -41,7 +41,7 @@ const Order = () => {
             </TableRow>
             </TableHead>
             <TableBody>
-            {order.map((row) => (
+            {order.map((row,index) => (
                 <TableRow
                 hover
                 key={row.ORDER_REF}
