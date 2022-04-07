@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ZakariaSelassi/dashboardui/static/css/main.e6c13ad2.css",
+    "main.js": "/ZakariaSelassi/dashboardui/static/js/main.ab700ad3.js",
+    "static/js/787.2a07906e.chunk.js": "/ZakariaSelassi/dashboardui/static/js/787.2a07906e.chunk.js",
+    "static/media/404.svg": "/ZakariaSelassi/dashboardui/static/media/404.0972ee5026317f10c1e16926a2c04e13.svg",
+    "static/media/react.svg": "/ZakariaSelassi/dashboardui/static/media/react.14b66fcfa9b3cd90c7704ca991964a6b.svg",
+    "static/media/slack.svg": "/ZakariaSelassi/dashboardui/static/media/slack.c34827da1e44ca28efb317668e7d4cdb.svg",
+    "static/media/github.svg": "/ZakariaSelassi/dashboardui/static/media/github.0b9d3698100907be32a7d92acba195c2.svg",
+    "static/media/google.svg": "/ZakariaSelassi/dashboardui/static/media/google.844758527883b61c736af7eb9758f65e.svg",
+    "index.html": "/ZakariaSelassi/dashboardui/index.html",
+    "static/media/dropbox.svg": "/ZakariaSelassi/dashboardui/static/media/dropbox.67307b85a5bcd6d9bb5b2b25937ac791.svg",
+    "static/media/dots.svg": "/ZakariaSelassi/dashboardui/static/media/dots.ea85c6324da1bf14cb59cf928c071a3a.svg",
+    "main.e6c13ad2.css.map": "/ZakariaSelassi/dashboardui/static/css/main.e6c13ad2.css.map",
+    "main.ab700ad3.js.map": "/ZakariaSelassi/dashboardui/static/js/main.ab700ad3.js.map",
+    "787.2a07906e.chunk.js.map": "/ZakariaSelassi/dashboardui/static/js/787.2a07906e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ab700ad3.js"
+  ]
+}
